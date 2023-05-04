@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="2" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-01T00:59:42Z" name="Default suite" finished-at="2023-05-01T01:01:36Z" duration-ms="114844">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-05-01T00:59:42Z" name="Default test" finished-at="2023-05-01T01:01:36Z" duration-ms="114844">
+      <class name="parallel.ParallelRun">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="setUpClass" finished-at="2023-05-01T00:59:42Z" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:57Z" duration-ms="14876" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 0(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:57Z" duration-ms="15302" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 1(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T01:01:14Z" duration-ms="92443" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.AccountsPageSteps.accounts_page_title_should_be(AccountsPageSteps.java:49)
+at ✽.Accounts page title should be "Account Summary - Wells Fargo"(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/AccountsPage.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T01:01:14Z" duration-ms="92633" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigation Bar section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.AccountsPageSteps.accounts_section_count_should_be(AccountsPageSteps.java:68)
+at ✽.Navigation Bar section count should be 5(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/AccountsPage.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T01:00:41Z" duration-ms="59118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Forgot Password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:58Z" duration-ms="15703" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 3(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T01:00:36Z" duration-ms="54595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:57Z" duration-ms="15054" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 5(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:57Z" duration-ms="15569" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 4(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T00:59:57Z" duration-ms="15293" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 2(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T00:59:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-01T01:01:14Z" duration-ms="77002" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at parallel.LoginPageSteps.page_title_should_be(LoginPageSteps.java:32)
+at ✽.page title should be "Account Summary - Wells Fargo"(file:///Users/nigorabowles/eclipse-workspace/WF_Services/src/test/resources/parallel/LoginPage.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@363a52f]" started-at="2023-05-01T01:01:14Z" name="tearDownClass" finished-at="2023-05-01T01:01:36Z" duration-ms="21901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.ParallelRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
